@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+.venv/
+venv/
+env/
+
+cpp/build/
+cpp/*.obj
+*.exe
+*.ilk
+*.pdb
+
+MUJOCO_LOG.TXT
+*.log
+dlo2026/mjlab/scene/_compiled_two_ur10_cable.xml
+
+.idea/
+.vscode/
+.DS_Store
+
+# Generated reruns belong here; the checked-in paper snapshot is under
+# results/paper_benchmark_1000 and is intentionally tracked.
+results/benchmark_rerun/
+results/replay_outputs/
+results/paper_report/generated/
+final_results/
+called_paper_results/

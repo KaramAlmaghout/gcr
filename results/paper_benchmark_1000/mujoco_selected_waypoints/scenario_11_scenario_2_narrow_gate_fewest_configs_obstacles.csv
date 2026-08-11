@@ -1,0 +1,7 @@
+# Optional obstacle table for mujoco_exec/run_csv.py --obstacles.
+# Cylinder rows: type, name, x, y, radius, half_height
+# Box rows: type, name, x, y, hx, hy, hz
+# Polygon rows: polygon, name, height, x1, y1, x2, y2, ...
+type, name, x_or_height, y_or_x1, radius_or_y1, hy_or_x2, half_height_or_y2, ...
+polygon, gcr_obs_0, 0.007500, -0.080000, 0.000000, 0.080000, 0.000000, 0.080000, 0.240000, -0.080000, 0.240000
+polygon, gcr_obs_1, 0.007500, -0.080000, 0.360000, 0.080000, 0.360000, 0.080000, 0.600000, -0.080000, 0.600000

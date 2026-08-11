@@ -1,0 +1,11 @@
+scenario,title,source,n_runs,n_success,success_rate,time_mean_s,time_std_s,iterations_mean,success_path_cost_mean
+scenario_02_block_reorient,02: Reorient around an L-extended block with rounded target,gcr_last_benchmark,1000,1000,1,0.2492557921,0.1570401916,2148.558,0.7594615252
+scenario_03_L_narrow_corridor,03: Long-horizontal corridor ('-----|'),gcr_last_benchmark,1000,1000,1,0.303031006,0.2299628603,1861.501,0.798355009
+scenario_05_arc_to_straight,05: Arc -> distant straight through zigzag,gcr_last_benchmark,1000,1000,1,0.0076464015,0.002905218757,73.719,0.8101782115
+scenario_07_L_corridor_hard,07: L-corridor with two bend obstacles,gcr_last_benchmark,1000,1000,1,1.421447633,1.161118211,7375.134,0.5582953755
+scenario_08_dlo_workspace,08: DLO workspace (generate_dlo_workspace_figure),gcr_last_benchmark,1000,1000,1,0.025624138,0.1539655789,98.459,1.175535513
+scenario_09_S_corridor,"09: S-corridor, arcs with different curvatures",gcr_last_benchmark,1000,1000,1,0.1478344048,0.06652489906,971.076,1.291078431
+scenario_10_cluttered_bent,"10: Cluttered field, arcs with different curvatures",gcr_last_benchmark,1000,1000,1,0.1559846195,0.07369617608,1402.382,1.261841366
+scenario_2_narrow_gate,Scenario 2: narrow gate between two blocks,current_code_selected,1000,1000,1,0.0735900453,0.03687573064,665.758,1.057652099
+scenario_6_u_shaped_trap,Scenario 6: U-shaped obstacle trap,current_code_selected,1000,1000,1,0.1105288482,0.07054513692,762.587,1.1839363
+scenario_4_staggered_blocks,Scenario 4: staggered rectangular blocks,current_code_selected,1000,1000,1,0.3513032106,0.1637490501,2680.962,1.424791994
