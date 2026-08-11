@@ -11,7 +11,11 @@
 - `mujoco_selected_waypoints/`: exported waypoint and obstacle CSV files.
 
 The complete set of 10,000 successful path CSVs was omitted to keep Git history
-manageable. Rerunning `run_benchmark_paper.ps1` recreates them.
+manageable. Rerunning `gcr benchmark` recreates them.
+
+Generated output folders (`benchmark_rerun/`, `replay_outputs/`,
+`paper_report/generated/`, `gcr_waypoints/`, `figures/`) are ignored by Git;
+everything else here is a tracked paper artifact.
 
 `paper_report/outlier_analysis/` contains a separate runtime sensitivity
 analysis. It removes only upper runtime outliers identified independently for

@@ -1,30 +1,40 @@
+# Python
 __pycache__/
 *.py[cod]
 *.pyd
 *.pyo
-
 .venv/
 venv/
 env/
 
+# Packaging and tooling caches
+*.egg-info/
+build/
+dist/
+.ruff_cache/
+.pytest_cache/
+
+# C++ build products
 cpp/build/
 cpp/*.obj
 *.exe
 *.ilk
 *.pdb
 
+# MuJoCo runtime output
 MUJOCO_LOG.TXT
 *.log
-dlo2026/mjlab/scene/_compiled_two_ur10_cable.xml
 
+# Editors and OS
 .idea/
 .vscode/
 .DS_Store
 
-# Generated reruns belong here; the checked-in paper snapshot is under
-# results/paper_benchmark_1000 and is intentionally tracked.
+# Generated results. The checked-in paper snapshot lives in
+# results/paper_benchmark_1000, results/paper_report and
+# results/mujoco_final_errors and is intentionally tracked.
 results/benchmark_rerun/
 results/replay_outputs/
 results/paper_report/generated/
-final_results/
-called_paper_results/
+results/gcr_waypoints/
+results/figures/

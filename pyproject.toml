@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcr"
+description = "Guided Cable Reconfiguration planner, C++ benchmark tooling, and MuJoCo two-UR10e replay"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "GCR authors" }]
+keywords = ["motion-planning", "deformable-linear-object", "cable", "mujoco", "ur10e"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Private :: Do Not Upload",
+]
+dynamic = ["version"]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "mujoco",
+    "imageio",
+    "imageio-ffmpeg",
+]
+
+# The project does not declare an open-source license yet; see README.md.
+
+[project.scripts]
+gcr = "gcr.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "gcr.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+
+[tool.ruff.lint]
+# The planner and MuJoCo modules are ported research code; keep the default
+# correctness rules and skip the stylistic ones that would rewrite that port.
+select = ["E", "F", "W"]
+ignore = ["E501"]

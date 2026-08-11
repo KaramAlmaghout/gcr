@@ -1,1 +1,0 @@
-"""MuJoCo scene construction package."""

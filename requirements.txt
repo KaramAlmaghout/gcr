@@ -1,7 +1,6 @@
-numpy
-scipy
-matplotlib
-mujoco
-imageio
-pandas
-imageio-ffmpeg
+# Runtime dependencies are declared once, in pyproject.toml.
+# This file installs the project (editable) together with them:
+#
+#     python -m pip install -r requirements.txt
+#
+-e .
