@@ -188,8 +188,6 @@ which is ignored by Git. Existing retained recordings are in `videos/`.
   used before runtime-outlier filtering.
 - `results/paper_report/outlier_analysis/` contains the separate sensitivity
   analysis using the upper Tukey fence `Q3 + 1.5 IQR` per scenario.
-- Build products, caches, logs, new benchmark reruns, and replay outputs are
-  excluded through `.gitignore`.
 
 ## Integrity
 
@@ -200,9 +198,3 @@ videos. Verify it with:
 gcr verify
 ```
 
-## Licensing
-
-The project source does not currently declare an open-source license. Choose a
-project license before making the repository public. The vendored UR10e model
-retains the MuJoCo Menagerie license in
-`third_party/mujoco_menagerie/universal_robots_ur10e/LICENSE`.
